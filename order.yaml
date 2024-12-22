@@ -5,7 +5,7 @@ metadata:
   labels:
     app: order-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: order-deployment
@@ -15,10 +15,10 @@ spec:
         app: order-deployment
     spec:
       containers:
-      - name: orderservice
-        image: mohammedamrath/orderservice
-        ports:
-        - containerPort: 3002
+        - name: orderservice
+          image: mohammedamrath/orderservice
+          ports:
+            - containerPort: 3002
 ---
 apiVersion: v1
 kind: Service
@@ -31,4 +31,3 @@ spec:
     - port: 8080
       targetPort: 3002
   type: NodePort
-
