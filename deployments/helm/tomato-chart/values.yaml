@@ -5,7 +5,7 @@ services:
       image: mohammedamrath/customerservice
       tag: latest
     port: 3001
-    replicas: 1
+    replicas: 2
     namespace: tomato
   - name: order-service
     image: mohammedamrath/orderservice
