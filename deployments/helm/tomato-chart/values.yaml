@@ -6,6 +6,7 @@ services:
       tag: latest
     port: 3001
     replicas: 1
+    namespace: tomato
   - name: order-service
     image: mohammedamrath/orderservice
     repository:
@@ -13,3 +14,4 @@ services:
       tag: latest
     port: 3002
     replicas: 2
+    namespace: tomato
