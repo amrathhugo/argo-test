@@ -13,5 +13,5 @@ services:
       image: mohammedamrath/orderservice
       tag: latest
     port: 3002
-    replicas: 2
+    replicas: 1
     namespace: tomato
