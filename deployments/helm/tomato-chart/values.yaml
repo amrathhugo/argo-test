@@ -2,7 +2,7 @@ services:
   - name: customer-service
     image: mohammedamrath/customerservice
     repository:
-      image: mohammedamrath/customerservice
+      image: ngnix
       tag: latest
     port: 3001
     replicas: 2
